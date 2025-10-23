@@ -11,4 +11,6 @@ httpx
 dotenv 
 
 ## Setup
-Setup everything in the config.txt. Note GEMINI_API_KEY and GEMINI_API_URL can be any OpenAI compatible service, I just use gemini since it's free. 
+Setup everything in the config.txt. Note GEMINI_API_KEY and GEMINI_API_URL can be any OpenAI compatible service, I just use gemini since it's free.
+## notes
+I apoliogize for the references to grok, I was making a funny grok clone for something and figured I'd reuse this 
