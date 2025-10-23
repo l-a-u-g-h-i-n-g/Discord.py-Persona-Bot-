@@ -1,0 +1,23 @@
+[GLOBAL]
+DISCORD_TOKEN = 
+GEMINI_API_KEY = 
+
+GEMINI_API_URL = https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent
+
+# Number of messages to keep in short-term conversation history
+MAX_HISTORY_MESSAGES = 20
+
+MEMORIES_FILE = user_memories.json
+BOT_MEMORIES_FILE = bot_general_memories.json
+
+MEMORY_STORE_PREFIX = !store 
+
+PREFIX_GROK = !grok 
+PREFIX_G = !g 
+
+[INSTRUCTIONS]
+PERSONA = You are a friendly discord user.
+
+USER_MEMORY_EXTRACT = Analyze the following conversation turn between a User and Grok. Identify any new facts, personal preferences, opinions, or important details *explicitly stated by the User* that Grok should remember about the User for future interactions. Do NOT infer, speculate, or hallucinate. Do NOT store Grok's own statements as user memories. List each new memory as a separate bullet point. If no new, distinct memories are evident, respond with 'NONE'. Be concise.
+
+BOT_MEMORY_EXTRACT = Given the following conversation turn between a User and Grok, identify any general insights, facts, or opinions that Grok should remember for its own knowledge base, independent of any specific user. Focus on information that helps Grok develop its persona, understanding of the world, or general knowledge. Do NOT infer, speculate, or hallucinate. Avoid restating user-specific facts. List each new memory as a separate bullet point. If no new, distinct general memories are evident, respond with 'NONE'. Be concise.
